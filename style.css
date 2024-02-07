@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  header {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    color: #3498db;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 54px;
+  }
+
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 50px; 
+  }
+
+  .poem-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 500px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .poem-box:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .poem-title {
+    text-shadow: 2px 2px 4px #000000;
+    color: #3498db;
+    margin: 0; 
+    line-height: 1.2; 
+  }
+
+  .poem-text {
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0; 
+    text-align: justify; 
+    line-height: 1.4; 
+  }
+
+.dont-click-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+
+.dont-click-button {
+width: 250px;
+background-color: transparent;
+color: #8B0000; 
+padding: 10px;
+border: 2px solid #8B0000; 
+border-radius: 5px;
+cursor: pointer;
+transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+margin-top: 10px; 
+animation: blink 0.5s infinite; 
+}
+
+.dont-click-button:hover {
+color: #fff; 
+border-color: #fff; 
+}
+
+@keyframes blink {
+50% {
+  opacity: 0;
+}
+}
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #3498db;
+  }
+  
+  #text{
+    text-transform: capitalize;
+        letter-spacing: .5px;
+        color: #333;
+        font-weight: 48px;
+        text-shadow: 0 0 150px #0ff,
+                     0 0  250px #0ff,
+                     0 0  500px #0ff,
+                     0 0  1000px #0ff,
+                     0 0  1500px #0ff,
+                     inset 0 0 500px #0ff;
+        background: linear-gradient(45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+        background-size: 200% 200%;
+       -webkit-background-clip: text;
+       -webkit-text-stroke: 1px transparent;    
+  }
